@@ -1,0 +1,75 @@
+
+/**
+  * Module: Help classes
+  */
+
+.is-hidden {
+  display: none!important; }
+
+h1, header {
+  border-bottom: 1px dashed #ccc;
+  text-transform: uppercase;
+  line-height: 1.2;
+  margin-bottom: 20px;
+  font-size: 24px; }
+
+/**
+  * Module: Button
+  */
+.btn {
+  display: inline-block;
+  border: medium none;
+  border-radius: 4px;
+  cursor: pointer;
+  text-transform: uppercase;
+  box-sizing: border-box;
+  font-weight: 600;
+  border: 2px solid #ccc;
+  background-color: #fafafa;
+  padding: 6px 8px; }
+
+.btn:focus {
+  outline: none; }
+
+/**
+  * Module: Button
+  * Behavior: WithLoader
+  */
+@-moz-keyframes spin {
+  from {
+    -moz-transform: rotate(0deg);
+    transform: rotate(0deg); }
+  to {
+    -moz-transform: rotate(360deg);
+    transform: rotate(360deg); } }
+@-webkit-keyframes spin {
+  from {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg); }
+  to {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg); } }
+@keyframes spin {
+  from {
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg); }
+  to {
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg); } }
+i.fa-spinner:not(.is-hidden) {
+  -moz-animation: spin 1800ms infinite linear;
+  -webkit-animation: spin 1800ms infinite linear;
+  animation: spin 1800ms infinite linear; }
+
+/** Page styles
+  *
+  */
+#app-outer {
+  max-width: 80rem;
+  margin: auto;
+  padding: 4rem 2rem;
+}
